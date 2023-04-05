@@ -127,8 +127,8 @@ class Delete(Resource):
         return 'Eliminado exitosamente', 204
     
 def sendEmail(email, msg):
-    sender = 'oscar7bosigas@gmail.com'
-    password = 'ihpjhsfxcccgooga'
+    sender = ''
+    password = ''
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
     server.login(sender,password)
