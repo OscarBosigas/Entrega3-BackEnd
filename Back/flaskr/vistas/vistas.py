@@ -139,9 +139,9 @@ class UploadFile(Resource):
     jwt_required()
     def post(self):
         file = request.files['file']
-        if not os.path.isdir('originals'):
-            os.mkdir('originals')
-        file.save('originals/' + file.filename)
+        if not os.path.isdir('sin_comprimir'):
+            os.mkdir('sin_comprimir')
+        file.save('sin_comprimir/' + file.filename)
         return {'mensaje': 'Archivo subido correctamente, empezando tarea de compresion...'}
 
 class SaveTask(Resource):
