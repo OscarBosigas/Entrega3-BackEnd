@@ -128,7 +128,7 @@ class Delete(Resource):
     
 def sendEmail(email, msg):
     sender = 'oscar7bosigas@gmail.com'
-    password = 'wtknllydvcnkbwrr'
+    password = 'ihpjhsfxcccgooga'
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
     server.login(sender,password)
